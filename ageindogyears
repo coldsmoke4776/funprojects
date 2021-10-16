@@ -1,0 +1,21 @@
+//my age as a number
+let myAge = 29;
+//early years variable
+let earlyYears = 2;
+//reassigns value of earlyYears to earlyYears * 2
+earlyYears *= 10.5;
+//subtracts 2 from myAge, assigns to new variable laterYears
+let laterYears = myAge - 2;
+//calculates dog years, accounts for later years 
+laterYears *= 4
+//print to console
+console.log(earlyYears);
+console.log(laterYears);
+//adds earlyYears and laterYears together
+let myAgeInDogYears = earlyYears + laterYears;
+console.log(myAgeInDogYears);
+//writes my name in lower case, assigns to variable myName
+let myName = 'Matt'.toLowerCase();
+console.log(myName);
+//uses these variables in a console.log statement in context
+console.log('My name is ' + myName + '.' + ' I am ' + myAge + ' years old in human years which is ' + myAgeInDogYears + " years old in dog years.")
