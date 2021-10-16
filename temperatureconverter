@@ -1,0 +1,15 @@
+//forecasted temperature in kelvin
+const kelvin = 293;
+//converts kelvin to celsius by subtracting 273
+const celsius = kelvin - 273;
+//converts celsius to fahrenheit using below equation
+let fahrenheit = celsius * (9/5) + 32
+//rounds the result of that equation down to nearest integer
+fahrenheit = Math.floor(fahrenheit);
+
+console.log('The temperature is ' + fahrenheit +  ' degrees Fahrenheit');
+
+let newton = celsius * (33/100);
+newton = Math.floor(newton);
+
+console.log ('The temperature is ' + newton + ' degrees on the Newton scale');
