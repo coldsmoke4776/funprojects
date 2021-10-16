@@ -1,0 +1,21 @@
+let input = "i came here for a shootout, like a western";
+const vowels = ['a', 'e', 'i', 'o', 'u'];
+let resultArray = []
+
+for (let x = 0; x < input.length; x++){
+  //console.log(input[x]);
+  if(input[x] === 'e'){
+    resultArray.push(input[x]);
+  }
+  if(input[x] === 'u'){
+    resultArray.push(input[x]);
+  }
+  for (let z = 0; z < vowels.length; z++) {
+    //console.log('z is ' + z);
+    if (input[x] === vowels[z]){
+      resultArray.push(input[x]);
+    }
+  }
+}
+console.log(resultArray.join('').toUpperCase());
+  
