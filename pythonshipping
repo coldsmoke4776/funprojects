@@ -1,0 +1,35 @@
+weight = 41.5
+
+#Ground Shipping
+shipping_price = 0
+flat_charge = 20
+
+if weight <= 2:
+  shipping_price = (weight * 1.50) + flat_charge
+elif weight <= 6:
+  shipping_price = (weight * 3.00) + flat_charge
+elif weight <= 10:
+  shipping_price = (weight * 4.00) + flat_charge
+else:
+  shipping_price = (weight * 4.75) + flat_charge
+
+print('Your package will cost $' + str(shipping_price) + " to ship via Ground Shipping.")
+
+#Ground Premium Shipping
+
+premium_shipping_price = 125
+print ("This would cost: $" + str(premium_shipping_price) + " to ship via Ground Shipping Premium.")
+
+#Drone Shipping
+
+drone_shipping_price = 0
+if weight <= 2:
+  drone_shipping_price = weight * 4.50
+elif weight <= 6:
+  drone_shipping_price = weight * 9.00
+elif weight <= 10:
+  drone_shipping_price = weight * 12.00
+else:
+  drone_shipping_price = weight * 14.25
+
+print('This would cost: $' + str(drone_shipping_price) + " to ship via flying drone.")
